@@ -10,7 +10,7 @@ import (
 	"time"
 )
 
-var otpStore = make(map[string]string) // 简单的内存存储方式
+var otpStore = make(map[string]string)
 
 func SendOTPByEmail(email string) error {
 	otp := utils.GenerateOTP(6)
